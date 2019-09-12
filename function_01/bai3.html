@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <input id="inpNumber1" type="text"><br>
+    <input id="inpNumber2" type="text"><br>
+    <button type="button" onclick="showResult()">Click</button>
+    <div id="result"></div>
+    <script>
+        function addNumbers(a,b) {
+            if (a > b) {
+                alert(a + " lớn hơn  " + b);
+            } else {
+                let result = a + b;
+                return result;
+            }
+        }
+
+        function showResult() {
+            let inp1 = document.getElementById("inpNumber1").value;
+            inp1 = Number(inp1);
+            let inp2 = document.getElementById("inpNumber2").value;
+            inp2 = Number(inp2);
+            let result = addNumbers(inp1,inp2);
+            if (inp1 > inp2) {
+                document.getElementById("result").innerHTML = "";
+            } else {
+                document.getElementById("result").innerHTML = "Tổng của a và b là: " + result;
+            }
+        }
+    </script>
+</body>
+</html>
