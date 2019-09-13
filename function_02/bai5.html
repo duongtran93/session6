@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        let n1 = parseInt(prompt("Nhập số thứ nhất: "));
+        let n2 = parseInt(prompt("Nhập số thứ hai: "));
+        let n3 = parseInt(prompt("Nhập số thứ ba: "));
+        function findMinNumber(a,b,c) {
+            let minN;
+            if (a < b && a < c) {
+                minN = a;
+                return minN;
+            } else if (b < a && b < c) {
+                minN = b;
+                return minN;
+            } else if (c < a && c < b) {
+                minN = c;
+                return minN;
+            }
+        }
+
+        let result = findMinNumber(n1,n2,n3);
+        alert("Số nhỏ nhất là: " + result);
+    </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function circleArea(r) {
+            return r * r * 3.14;
+        }
+        
+        function circlePerimeter(r) {
+            return r * 2 * 3.14;
+        }
+
+        let inpR = prompt("Nhập bán kính: ");
+        inpR = Number(inpR);
+        let area = circleArea(inpR);
+        document.write("Diện tích hình tròn là: " + area +"<br>");
+        let perimeter = circlePerimeter(inpR);
+        document.write("Chu vi hình tròn là: " + perimeter);
+    </script>
+</body>
+</html>

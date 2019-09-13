@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkNumber(number) {
+            if (number > 0 && Number.isInteger(number)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        let inpNumber = prompt("Nhập số: ");
+        inpNumber = Number(inpNumber);
+        let result = checkNumber(inpNumber);
+        alert(result);
+    </script>
+</body>
+</html>

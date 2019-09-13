@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function swapNumber(a,b) {
+            let temp = a;
+            a = b;
+            b = temp;
+            return a + " , " + b;
+        }
+
+        let n1 = parseInt(prompt("Nhập số thứ nhất: "));
+        let n2 = parseInt(prompt("Nhập số thứ hai: "));
+        let result = swapNumber(n1,n2);
+        alert(result);
+    </script>
+</body>
+</html>

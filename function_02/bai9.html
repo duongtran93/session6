@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function checkCharacter() {
+            let cher = ["a", "d", "a", "q", "p", "a", "d"];
+            let character = prompt("Nhập ký tự: ");
+            let count = 0;
+            for (let i = 0; i < cher.length; i++)  {
+                if (character === cher[i]) {
+                    count++;
+                }
+            }
+            count = (count > 0) ? count : -1;
+            return count;
+        }
+        let result = checkCharacter();
+        alert(result);
+    </script>
+</body>
+</html>
